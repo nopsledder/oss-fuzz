@@ -20,4 +20,4 @@ RUN git clone --depth 1 https://github.com/Kludex/python-multipart python-multip
 RUN python3 -m pip install --upgrade pip
 WORKDIR python-multipart
 COPY *.patch $SRC/python-multipart
-COPY build.sh $SRC/
+COPY build.sh *.options $SRC/
